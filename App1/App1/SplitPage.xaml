@@ -40,7 +40,7 @@
         </Grid.ColumnDefinitions>
 
         <!-- 上一頁按鈕及頁面標題-->
-        <Grid x:Name="titlePanel">
+        <Grid x:Name="titlePanel" Margin="0,0,0,15">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="Auto"/>
                 <ColumnDefinition Width="*"/>
@@ -51,6 +51,7 @@
                 IsEnabled="{Binding DefaultViewModel.CanGoBack, ElementName=pageRoot}"
                 Style="{StaticResource BackButtonStyle}"/>
             <TextBlock x:Name="pageTitle" Grid.Column="1" Text="{Binding Title}" Style="{StaticResource PageHeaderTextStyle}"/>
+            <Button Content="新增" Grid.Column="1" HorizontalAlignment="Left" Margin="410,82,0,0" VerticalAlignment="Top" FontSize="18" Height="43" Click="Button_Click_1"/>
         </Grid>
 
         <!-- 垂直捲動項目清單-->

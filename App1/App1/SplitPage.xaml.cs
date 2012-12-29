@@ -26,6 +26,8 @@ namespace App1
     /// </summary>
     public sealed partial class SplitPage : App1.Common.LayoutAwarePage
     {
+        SampleDataSource sample = new SampleDataSource();
+
         public SplitPage()
         {
             this.InitializeComponent();
@@ -186,5 +188,16 @@ namespace App1
         }
 
         #endregion
+
+        
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            //SampleDataSource.GetGrou
+
+            
+            
+
+        }
     }
 }
